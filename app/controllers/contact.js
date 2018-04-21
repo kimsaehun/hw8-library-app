@@ -8,6 +8,7 @@ import {
 
 export default Controller.extend({
 
+  responseMessage: '',
   message: '',
   emailAddress: '',
 
@@ -20,6 +21,7 @@ export default Controller.extend({
 
     sendMessage() {
       alert('You\'re message has been sent!');
+      this.set('responseMessage', 'You\'re message has been sent!');
       this.set('message', '');
       this.set('emailAddress', '');
     }
